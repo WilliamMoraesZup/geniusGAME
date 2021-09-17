@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9037C57426F3B16B009D1B13 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037C57326F3B16B009D1B13 /* Model.swift */; };
+		9037C57626F3B3DB009D1B13 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037C57526F3B3DB009D1B13 /* Button.swift */; };
 		90C85A0626F3990C009EFB2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85A0526F3990C009EFB2B /* AppDelegate.swift */; };
 		90C85A0826F3990C009EFB2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85A0726F3990C009EFB2B /* SceneDelegate.swift */; };
 		90C85A0A26F3990C009EFB2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C85A0926F3990C009EFB2B /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9037C57326F3B16B009D1B13 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9037C57526F3B3DB009D1B13 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		90C85A0226F3990C009EFB2B /* GeniusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeniusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C85A0526F3990C009EFB2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90C85A0726F3990C009EFB2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				90C85A1926F39921009EFB2B /* supporting */,
 				90C85A0926F3990C009EFB2B /* ViewController.swift */,
+				9037C57526F3B3DB009D1B13 /* Button.swift */,
 				90C85A0B26F3990C009EFB2B /* Main.storyboard */,
+				9037C57326F3B16B009D1B13 /* Model.swift */,
 				90C85A0E26F3990E009EFB2B /* Assets.xcassets */,
 				90C85A1326F3990E009EFB2B /* Info.plist */,
 			);
@@ -148,6 +154,8 @@
 				90C85A0A26F3990C009EFB2B /* ViewController.swift in Sources */,
 				90C85A0626F3990C009EFB2B /* AppDelegate.swift in Sources */,
 				90C85A0826F3990C009EFB2B /* SceneDelegate.swift in Sources */,
+				9037C57626F3B3DB009D1B13 /* Button.swift in Sources */,
+				9037C57426F3B16B009D1B13 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

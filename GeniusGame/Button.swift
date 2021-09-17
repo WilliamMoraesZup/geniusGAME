@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+struct Button {
+    
+    
+    var active = true
+    
+    
+}

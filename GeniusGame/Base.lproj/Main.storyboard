@@ -28,7 +28,6 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yf-Cf-xAS">
                                                         <rect key="frame" x="0.0" y="0.0" width="153" height="72"/>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                         <connections>
                                                             <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAu-LW-MSo"/>
@@ -36,8 +35,10 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqv-HT-P9z">
                                                         <rect key="frame" x="161" y="0.0" width="153" height="72"/>
-                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <connections>
+                                                            <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfC-WE-Duy"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -48,36 +49,57 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9H-B5-amW">
                                                 <rect key="frame" x="0.0" y="0.0" width="153" height="72"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <connections>
+                                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPV-aZ-Z8h"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMm-xh-yvH">
                                                 <rect key="frame" x="161" y="0.0" width="153" height="72"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <connections>
+                                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ji-02-cyG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo ao Genius!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEy-rf-5Lg">
-                                <rect key="frame" x="72" y="684" width="271" height="35"/>
+                                <rect key="frame" x="71.5" y="684" width="271" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1R-Uo-q5p">
+                                <rect key="frame" x="149" y="551" width="116" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="StartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlI-ar-jhm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="j1R-Uo-q5p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AUU-Tr-SOO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yEy-rf-5Lg" secondAttribute="bottom" constant="143" id="Bv9-qv-NGo"/>
                             <constraint firstItem="cQy-B8-nyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="GGg-dQ-p18"/>
                             <constraint firstItem="cQy-B8-nyg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="KZA-Kd-lg5"/>
+                            <constraint firstItem="j1R-Uo-q5p" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Qbb-PR-tVl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cQy-B8-nyg" secondAttribute="trailing" constant="50" id="brB-Q5-Pe3"/>
                             <constraint firstItem="yEy-rf-5Lg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p9C-Km-n5B"/>
                             <constraint firstItem="cQy-B8-nyg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="xJp-cl-afs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="StartButton" destination="j1R-Uo-q5p" id="nPG-Zg-ewf"/>
+                        <outletCollection property="ButtonsCollection" destination="8yf-Cf-xAS" collectionClass="NSMutableArray" id="Coe-pF-T6L"/>
+                        <outletCollection property="ButtonsCollection" destination="Tqv-HT-P9z" collectionClass="NSMutableArray" id="zU3-db-sWq"/>
+                        <outletCollection property="ButtonsCollection" destination="B9H-B5-amW" collectionClass="NSMutableArray" id="X4F-SC-PIh"/>
+                        <outletCollection property="ButtonsCollection" destination="jMm-xh-yvH" collectionClass="NSMutableArray" id="BQg-jT-njM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,18 +109,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
