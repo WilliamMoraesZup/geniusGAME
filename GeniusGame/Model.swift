@@ -17,8 +17,13 @@ class Game {
     var playerWin = false
     
     func newRound(){
-       
+        print("ANTIGA SEQUENCIA")
+       print(winnerSequence)
+        
+        
         winnerSequence.append(Int( arc4random_uniform(UInt32(4))))
+        print("NOVA SEQUENCIA")
+        print(winnerSequence)
         playerClickPosition = 0
         
     }
@@ -36,10 +41,9 @@ class Game {
             
             playerTurn = false
             endGame = true
-            winnerSequence = []
+            winnerSequence = [] // restart gam sequence
             
-            
-            // deve trazer popup de fim de jogo e liberar start game
+             
         }
             playerClickPosition += 1
             if playerClickPosition == winnerSequence.count {

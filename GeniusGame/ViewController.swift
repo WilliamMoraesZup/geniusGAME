@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             
             game.newRound()
             
-            loop(times : game.winnerSequence.count  )
+            loop()
 
             // when loops ends, player turn is ON
              
@@ -62,10 +62,13 @@ class ViewController: UIViewController {
                 if playerWin {
                    
                     round = Turn.CPU_TURN
-                   // initGame()
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
+                        self.initGame()
+                    }
                     game.playerWin = false 
                 }
-                
+            
                 
                 if endGame {
                     endGamePopup()
@@ -77,17 +80,22 @@ class ViewController: UIViewController {
     
     
     //LOOP OF CPU TURN s
-    func loop(times: Int) {
+    func loop() {
         var i = 0
-        
+        print(game.winnerSequence)
         func nextIteration() {
-            if i < times {
-                ButtonsCollection[game.winnerSequence[i]].pulse
-                i += 1
+            
+            if i < game.winnerSequence.count {
                 
+                print( ButtonsCollection[game.winnerSequence[i]])
+                ButtonsCollection[game.winnerSequence[i]].pulse
+                                
                 DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
                     nextIteration()
                 }
+                
+                i += 1
+
             }
             else {
                 round = .PLAYER_TURN
